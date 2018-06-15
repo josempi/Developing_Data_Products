@@ -11,6 +11,8 @@ Developing Data Products - contains course project files
 
 This is a geospatial graphical plot, using the Leaflet Open Street Map functionality, that allows the observer to select magnitude ranges, color schemes, and the map zoom in/out function using the mouse or the +/- button.
 
-Use the link below to run the interactive study.
 
+Use this link to run the RStudio presentation:  http://rpubs.com/josempi/397320
+
+Use the link below to run the interactive study.
 Shiny App Link: https://datast0r.shinyapps.io/Worldwide_Seismic_Activity/
