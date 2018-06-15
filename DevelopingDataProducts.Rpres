@@ -1,0 +1,58 @@
+Developing Data Products
+========================================================
+author: Jose M. Pi
+date: June 14, 2018
+autosize: true
+
+
+
+
+
+## Worldwide Seismic Activity - Last Month
+
+Introduction
+========================================================
+
+This presentation is part of the Developing Data Products Coursera.org course project submission.
+
+- This is an R Presentation generated with RStudio Version 1.0.153 – © 2009-2017 RStudio, Inc.
+- Libraries and resources used were Shiny, Leaflet, RColorBrewer and Slidify.
+
+
+Data Summary - Worldwide Seismic Activity - Last Month
+========================================================
+
+```{r Data Section, echo=FALSE, warning=FALSE, message=FALSE}
+EarthQuakeData <- read.csv2("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/1.0_month.csv", sep = ",")
+MapQuakeData <- EarthQuakeData[c(2,3,5)]
+colnames(MapQuakeData) <- c("lat", "lng", "mag")
+MapQuakeData$lat <- as.numeric(levels(MapQuakeData$lat)[MapQuakeData$lat])
+MapQuakeData$lng <- as.numeric(levels(MapQuakeData$lng)[MapQuakeData$lng])
+MapQuakeData$mag <- as.numeric(levels(MapQuakeData$mag)[MapQuakeData$mag])
+```
+
+Ref: https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/1.0_month.csv
+```{r Data Summary, echo=TRUE, warning=FALSE, message=FALSE}
+summary(MapQuakeData)
+head(MapQuakeData)
+```
+
+
+Worldwide Seismic Activity - Last Month
+========================================================
+### Worldwide Seismic Activity Study
+
+
+This is a geospatial graphical plot, using the Leaflet Open Street Map functionality, that allows the observer to select magnitude ranges, color schemes, and the map zoom in/out function using the mouse or the +/- button.
+
+Use the link below to run the interactive study.
+
+Shiny App Link: https://datast0r.shinyapps.io/Worldwide_Seismic_Activity/
+
+
+GitHub Repository Info
+========================================================
+
+Use the below link to access the GitHub files.
+
+GitHub Link: https://github.com/josempi/Developing_Data_Products
