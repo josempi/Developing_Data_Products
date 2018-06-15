@@ -1,0 +1,12 @@
+name: Worldwide_Seismic_Activity
+title: Worldwide_Seismic_Activity
+username:
+account: datast0r
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 360089
+bundleId: 1430683
+url: https://datast0r.shinyapps.io/Worldwide_Seismic_Activity/
+when: 1529032083.64223
+asMultiple: FALSE
+asStatic: FALSE
