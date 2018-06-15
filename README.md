@@ -14,5 +14,4 @@ This is a geospatial graphical plot, using the Leaflet Open Street Map functiona
 
 Use this link to run the RStudio presentation:  http://rpubs.com/josempi/397320
 
-Use the link below to run the interactive study.
-Shiny App Link: https://datast0r.shinyapps.io/Worldwide_Seismic_Activity/
+Use this link to run the interactive Shiny study, in the Shiny App website: https://datast0r.shinyapps.io/Worldwide_Seismic_Activity/
